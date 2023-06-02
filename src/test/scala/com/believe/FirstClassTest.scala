@@ -8,7 +8,7 @@ import org.apache.spark.sql.types._
 
 class FirstClassTest extends AnyFlatSpec with DataFrameComparer with SparkTestSession with Matchers{
 
-  "Simple test" should "do something" in {
+  "First class test" should "return the expected dataframe" in {
     // Given
     val sales = readCsvWithHeader("src/test/resources/salesTest.csv", ";")
     val songs = readCsvWithHeader("src/test/resources/songsTest.csv", ";")
