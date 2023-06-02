@@ -1,6 +1,6 @@
 package com.believe
 
-object keys {
+object Keys {
   object salesKeys {
     val TRACK_ISRC_CODE = "TRACK_ISRC_CODE"
     val TRACK_ID = "TRACK_ID"

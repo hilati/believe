@@ -13,3 +13,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % sparkVersion,
   "org.apache.spark" %% "spark-sql" % sparkVersion
 )
+
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.16"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.16" % "test"
+libraryDependencies += "com.github.mrpowers" % "spark-fast-tests_2.13" % "1.3.0" % "test"

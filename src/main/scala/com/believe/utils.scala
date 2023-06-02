@@ -2,12 +2,12 @@ package com.believe
 
 
 import org.apache.spark.sql._
-import com.believe.keys._
+import com.believe.Keys._
 import org.apache.spark.sql.functions.col
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types._
 
-object utils {
+object Utils {
   def enrichSalesBySongs(sales: DataFrame, songs: DataFrame) = {
     val expression = sales(salesKeys.TRACK_ISRC_CODE) === songs(songsKey.SONG_ISRC) && sales(salesKeys.TRACK_ID) === songs(songsKey.SONG_ID)
     sales.join(songs, expression, "inner")
